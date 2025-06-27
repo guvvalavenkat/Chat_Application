@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatApp - Modern Chat</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="chat-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>💬 ChatApp</h2>
+      </div>
+      <h3>Chat Rooms</h3>
+      <ul id="rooms"></ul>
+      <h4>Online Users</h4>
+      <ul id="users"></ul>
+    </aside>
+    <main class="chat-main">
+      <div id="chat-header">
+        <h2 id="room-title">Room: General</h2>
+      </div>
+      <div id="messages" class="messages"></div>
+      <form id="messageForm" autocomplete="off">
+        <input id="messageInput" type="text" placeholder="Type your message here..." maxlength="500" required autocomplete="off">
+        <button type="submit">🚀</button>
+      </form>
+    </main>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html> 
